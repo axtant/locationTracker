@@ -7,8 +7,31 @@ body {
   background-color: #f4f4f4;
 }
 
-:host {
-  display: block;
+#header {
+  background-color: rgb(223, 223, 223);
+  display: flex;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+#logoutBtn {
+  background-color: #940000;
+  color: white;
+  border: none;
+  padding: 5px 9px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: auto;
+  transition: background-color 0.3s ease;
+}
+
+#logoutBtn:hover {
+  background-color: #7a0000;
+}
+
+#all {
   text-align: center;
   margin-top: 50px;
 }
@@ -24,7 +47,7 @@ button {
   background-color: #940000;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 10px;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
