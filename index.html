@@ -4,26 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Attendance Tracker</title>
-<!-- Link to external CSS file -->
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- Background colored div -->
-<div style="background-color: rgb(138, 13, 13); height: 50px;"></div>
+<div id="header">
+    <button id="logoutBtn">Logout</button>
+</div>
 
-<!-- Attendance Tracker Title -->
-<h1>Attendance Tracker</h1>
+<div id="all">
+    <h1>Attendance Tracker</h1>
+    <p>Hi Welcome, {{userName}}</p>
+    <p>Click the button to mark your attendance.</p>
+    <button id="submitBtn">Submit</button>
+</div>
 
-<!-- Instruction paragraph -->
-<p>Click the button to mark your attendance.</p>
-
-<!-- Button to trigger geolocation -->
-<button id="submitBtn">Submit</button>
-
-<!-- Paragraph to display the message -->
 <p id="demo"></p>
-
-<!-- Link to external JavaScript file -->
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>
